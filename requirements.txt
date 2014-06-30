@@ -1,0 +1,5 @@
+beautifulsoup4
+httpstream
+jsonstream
+urimagic
+lxml
