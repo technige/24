@@ -1,0 +1,84 @@
+/*****************
+ *   ===, ,   ,  *
+ *      | |   |  *
+ *  ,===' '===|  *
+ *  |         |  *
+ *  '===      '  *
+ *               *
+ *    SEASON 9   *
+ *               *
+ *****************/
+
+(season_9:Season!number {"name":"Season 9","number":9})
+
+/* Actors */
+(kiefer_sutherland:Actor!name {"name":"Kiefer Sutherland"})
+(yvonne_strahovski:Actor!name {"name":"Yvonne Strahovski"})
+(tate_donovan:Actor!name {"name":"Tate Donovan"})
+(mary_lynn_rajskub:Actor!name {"name":"Mary Lynn Rajskub"})
+(william_devane:Actor!name {"name":"William Devane"})
+(gbenga_akinnagbe:Actor!name {"name":"Gbenga Akinnagbe"})
+(giles_matthey:Actor!name {"name":"Giles Matthey"})
+(michael_wincott:Actor!name {"name":"Michael Wincott"})
+(benjamin_bratt:Actor!name {"name":"Benjamin Bratt"})
+(kim_raver:Actor!name {"name":"Kim Raver"})
+(michelle_fairley:Actor!name {"name":"Michelle Fairley"})
+(emily_berrington:Actor!name {"name":"Emily Berrington"})
+(liam_garrigan:Actor!name {"name":"Liam Garrigan"})
+(ross_mccall:Actor!name {"name":"Ross McCall"})
+(colin_salmon:Actor!name {"name":"Colin Salmon"})
+(john_boyega:Actor!name {"name":"John Boyega"})
+(sacha_dhawan:Actor!name {"name":"Sacha Dhawan"})
+(joseph_millson:Actor!name {"name":"Joseph Millson"})
+(stanley_townsend:Actor!name {"name":"Stanley Townsend"})
+(tzi_ma:Actor!name {"name":"Tzi Ma"})
+(stephen_fry:Actor!name {"name":"Stephen Fry"})
+
+/* Characters */
+(adrian_cross:Character!name {"alive":false,"name":"Adrian Cross"})
+(alastair_davies:Character!name {"alive":true,"name":"Alastair Davies","nationality":"British"})
+(anatol_stolnavich:Character!name {"alive":true,"name":"Anatol Stolnavich","nationality":"Russian"})
+(audrey_boudreau:Character!name {"alive":true,"name":"Audrey Boudreau","nationality":"American"})
+(cheng_zhi:Character!name {"alive":true,"name":"Cheng Zhi","nationality":"Chinese"})
+(chloe_o_brian:Character!name {"alive":true,"name":"Chloe O'Brian","nationality":"American"})
+(chris_tanner:Character!name {"alive":true,"name":"Chris Tanner","nationality":"American"})
+(coburn_day_9:Character!name {"alive":true,"name":"Coburn"})
+(derrick_yates:Character!name {"alive":false,"name":"Derrick Yates","nationality":"British"})
+(erik_ritter:Character!name {"alive":true,"name":"Erik Ritter","nationality":"American"})
+(ian_al_harazi:Character!name {"alive":false,"name":"Ian Al-Harazi"})
+(jack_bauer:Character!name {"alive":true,"name":"Jack Bauer","nationality":"American"})
+(james_heller:Character!name {"alive":true,"name":"James Heller","nationality":"American"})
+(jordan_reed:Character!name {"alive":false,"name":"Jordan Reed","nationality":"American"})
+(kate_morgan:Character!name {"alive":true,"name":"Kate Morgan"})
+(margot_al_harazi:Character!name {"alive":false,"name":"Margot Al-Harazi","nationality":"British"})
+(mark_boudreau:Character!name {"alive":true,"name":"Mark Boudreau","nationality":"American"})
+(naveed_shabazz:Character!name {"alive":false,"name":"Naveed Shabazz"})
+(ron_clark:Character!name {"alive":true,"name":"Ron Clark","nationality":"American"})
+(simone_al_harazi:Character!name {"alive":true,"name":"Simone Al-Harazi","nationality":"British"})
+(steve_navarro:Character!name {"alive":true,"name":"Steve Navarro","nationality":"American"})
+
+/* Relationships */
+(stephen_fry)-[:STARRED_AS!]->(alastair_davies)-[:APPEARED_IN! {"episodes":7}]->(season_9)
+(gbenga_akinnagbe)-[:STARRED_AS!]->(erik_ritter)-[:APPEARED_IN! {"episodes":9}]->(season_9)
+(tzi_ma)-[:STARRED_AS!]->(cheng_zhi)-[:APPEARED_IN! {"episodes":1}]->(season_9)
+(ross_mccall)-[:STARRED_AS!]->(ron_clark)-[:APPEARED_IN! {"episodes":7}]->(season_9)
+(emily_berrington)-[:STARRED_AS!]->(simone_al_harazi)-[:APPEARED_IN! {"episodes":7}]->(season_9)
+(liam_garrigan)-[:STARRED_AS!]->(ian_al_harazi)-[:APPEARED_IN! {"episodes":7}]->(season_9)
+(jack_bauer)-[:KILLED!]->(ian_al_harazi)
+(benjamin_bratt)-[:STARRED_AS!]->(steve_navarro)-[:APPEARED_IN! {"episodes":10}]->(season_9)
+(kim_raver)-[:STARRED_AS!]->(audrey_boudreau)-[:APPEARED_IN! {"episodes":10}]->(season_9)
+(william_devane)-[:STARRED_AS!]->(james_heller)-[:APPEARED_IN! {"episodes":10}]->(season_9)
+(joseph_millson)-[:STARRED_AS!]->(derrick_yates)-[:APPEARED_IN! {"episodes":3}]->(season_9)
+(john_boyega)-[:STARRED_AS!]->(chris_tanner)-[:APPEARED_IN! {"episodes":4}]->(season_9)
+(kiefer_sutherland)-[:STARRED_AS!]->(jack_bauer)-[:APPEARED_IN! {"episodes":10}]->(season_9)
+(stanley_townsend)-[:STARRED_AS!]->(anatol_stolnavich)-[:APPEARED_IN! {"episodes":3}]->(season_9)
+(tate_donovan)-[:STARRED_AS!]->(mark_boudreau)-[:APPEARED_IN! {"episodes":10}]->(season_9)
+(michelle_fairley)-[:STARRED_AS!]->(margot_al_harazi)-[:APPEARED_IN! {"episodes":8}]->(season_9)
+(jack_bauer)-[:KILLED!]->(margot_al_harazi)
+(mary_lynn_rajskub)-[:STARRED_AS!]->(chloe_o_brian)-[:APPEARED_IN! {"episodes":10}]->(season_9)
+(yvonne_strahovski)-[:STARRED_AS!]->(kate_morgan)-[:APPEARED_IN! {"episodes":10}]->(season_9)
+(sacha_dhawan)-[:STARRED_AS!]->(naveed_shabazz)-[:APPEARED_IN! {"episodes":4}]->(season_9)
+(michael_wincott)-[:STARRED_AS!]->(adrian_cross)-[:APPEARED_IN! {"episodes":9}]->(season_9)
+(giles_matthey)-[:STARRED_AS!]->(jordan_reed)-[:APPEARED_IN! {"episodes":9}]->(season_9)
+(colin_salmon)-[:STARRED_AS!]->(coburn_day_9)-[:APPEARED_IN! {"episodes":7}]->(season_9)
+
