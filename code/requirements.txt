@@ -1,5 +1,8 @@
 beautifulsoup4
+bottle
 httpstream
 jsonstream
-urimagic
 lxml
+py2neo
+urimagic
+
