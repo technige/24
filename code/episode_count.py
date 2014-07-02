@@ -1,12 +1,18 @@
-from py2neo import neo4j
-graph_db = neo4j.GraphDatabaseService()
+#!/usr/bin/env python
 
-q = """MATCH (c:Character)-[a:APPEARED_IN]->(season)
-       RETURN c.name, sum(a.episodes) AS episodes
-       ORDER BY episodes DESC"""
+from __future__ import print_function
+from py2neo.neo4j import *
 
-query = neo4j.CypherQuery(graph_db, q)
+graph_db = GraphDatabaseService()
 
-for record in query.execute().data:
-    print record
+q = """\
+MATCH (c:Character)-[a:APPEARED_IN]->(season)
+RETURN c.name, sum(a.episodes) AS episodes
+ORDER BY episodes DESC
+"""
+
+query = CypherQuery(graph_db, q)
+
+for record in query.execute():
+    print(record)
 
