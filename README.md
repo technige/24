@@ -42,7 +42,8 @@ Execute the following commands:
 
 ````
 for i in {1..9}
-	do curl -X POST http://localhost:7522/load2neo/load/geoff -d @data/24_${i}.geoff; 
+	do curl -X POST http://localhost:7474/load2neo/load/geoff -d @data/24_${i}.geoff; 
+
 done
 ````
 
