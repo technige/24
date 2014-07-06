@@ -57,3 +57,16 @@ We'll import the data using a browser plugin which can execute a HTTP POST reque
 Here's an example of importing [data/24_1.geoff](data/24_1.geoff) using DHC REST. You'll need to do something similar for each of the files in the [data](data) directory.
 
 <img src="http://i.imgur.com/aLeW81S.png"></img>
+
+## Setting up iPython Notebook
+If we get everyone setup in a timely manner we'll try and create some [iPython notebooks](http://ipython.org/ipython-doc/dev/notebook/notebook.html) of what we get up to. 
+
+Install iPython notebook
+````
+pip install ipython[notebook]
+````
+
+Start up the 24 notebook
+````
+ipython notebook
+````

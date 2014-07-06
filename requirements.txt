@@ -1,0 +1,9 @@
+Jinja2==2.7.3
+MarkupSafe==0.23
+backports.ssl-match-hostname==3.4.0.2
+gnureadline==6.3.3
+ipython==2.1.0
+py2neo==1.6.4
+pyzmq==14.3.1
+tornado==3.2.2
+wsgiref==0.1.2
